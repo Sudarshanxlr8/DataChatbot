@@ -7,7 +7,7 @@ from pymongo.database import Database
 load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
-MONGO_DATABASE = os.getenv("MONGO_DATABASE", "paisa_smart_demo")
+MONGO_DATABASE = os.getenv("MONGO_DATABASE", "datachat_demo")
 
 _client = None
 
