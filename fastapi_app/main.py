@@ -7,8 +7,8 @@ from fastapi.responses import FileResponse
 from fastapi_app.routes import auth, account, portfolio, holdings, transactions, chatbot
 
 app = FastAPI(
-    title="PaisaSmart Account & Portfolio API",
-    description="Backend REST API for PaisaSmart Account & Portfolio Chatbot project with JWT authentication & Gemini LLM tool calling.",
+    title="DataChat Account & Portfolio API",
+    description="Backend REST API for DataChat Account & Portfolio Chatbot project with JWT authentication & Gemini LLM tool calling.",
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc"
@@ -36,7 +36,7 @@ def health_check():
     """
     Health check endpoint returning system status. Public endpoint.
     """
-    return {"status": "ok", "service": "PaisaSmart FastAPI Backend"}
+    return {"status": "ok", "service": "DataChat FastAPI Backend"}
 
 # Serve frontend static assets from root /
 frontend_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "frontend"))
